@@ -1,0 +1,21 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 81px;
+  height: 42px;
+  border: 1px solid var(--br-c);
+  border-radius: 8px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color:  rgba(var(--cl-f),1.0);
+  transition: font-weight 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: 700;
+    font-size: 14px;
+  }
+}

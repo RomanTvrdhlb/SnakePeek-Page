@@ -1,0 +1,16 @@
+.nav {
+    &__link {
+      font-size: 14px;
+      line-height: 19px;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: rgba(var(--cl-e),1.0);
+      }
+  
+      &--active {
+        font-weight: 700;
+        color: rgba(var(--cl-f),1.0);
+      }
+    }
+  }

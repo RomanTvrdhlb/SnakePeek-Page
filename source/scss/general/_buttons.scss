@@ -1,0 +1,30 @@
+.main-button {
+  font-family: var(--font-family);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 40px 0 rgba(255, 215, 115, 0.3);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(var(--cl-a),1.0);
+  background: var(--gr-d);
+  border-radius: 8px;
+  padding: 18px 62px;
+  transition: all .4s;
+  width: fit-content;
+ 
+  &:hover {
+    opacity: .6;
+  }
+}
+
+
+
+
+
+
+
+
+
+

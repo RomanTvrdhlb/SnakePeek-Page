@@ -1,0 +1,17 @@
+.info{
+    background: linear-gradient(139deg, #4e55ff 0%, #3a7cfd 25.8%, #24a1fb 53.93%, #00daf8 100%);
+    padding: clamp(40px, 6.5056vw, 70px) 0;
+    margin-bottom: 55px;
+    overflow: hidden;
+   
+
+    @include for-tablet{
+        margin-top: -140px;
+    }
+
+    @include tablet{
+        @include for-mobile{
+            margin-top: calc(clamp(50px, 9.766vw, 100px) * -1);
+        }
+    }
+}

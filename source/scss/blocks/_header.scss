@@ -1,0 +1,64 @@
+.header {
+  border-bottom: 1px solid var(--br-a);
+  height: 76px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    height: 86px;
+    width: 76px;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: 1200px){
+      position: relative;
+      left: initial;
+      transform: initial;
+    }
+
+    @media (max-width: 991px){
+      display: none;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+
+    li + li {
+      margin-left: 60px;
+    }
+  }
+
+  &__btns {
+    position: relative;
+    width: 255px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile{
+      width: fit-content;
+      justify-content: flex-end;
+    }
+  }
+
+  @include mobile{
+    .profile{
+      display: none;
+    }
+  }
+}

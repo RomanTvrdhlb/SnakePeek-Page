@@ -1,0 +1,41 @@
+.details{
+    padding-bottom: clamp(150px, 36.71vw, 395px);
+    position: relative;
+    overflow: hidden;
+
+    @include mobile{
+        padding-bottom: 60px;
+    }
+
+    &__bg{
+        position: absolute;
+        right: 0;
+        top: 18%;
+        width: Min(15vw, 210px);
+        height: Min(28.571vw, 400px);
+        z-index: -1;
+        pointer-events: none;
+
+        img,picture{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &--mode{
+            right: initial;
+            left: 0;
+            top: 39%;
+            width: Min(13.429vw, 188px);
+            height: Min(28.571vw, 400px);
+        }
+    }
+
+    .about-list{
+        grid-gap: clamp(20px, 27.5093vw, 296px);
+
+        @include mobile{
+            grid-gap: 40px;
+        }
+    }
+}

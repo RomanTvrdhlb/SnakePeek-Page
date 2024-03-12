@@ -1,0 +1,30 @@
+.info-slider{
+    width: 100%;
+
+    &__slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+
+    &__text{
+        font-family: var(--font-family2);
+        font-weight: 500;
+        font-size: clamp(32px, 5.7621vw, 62px);
+        line-height: 120%;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(var(--cl-a),1.0);
+        b{
+            background: var(--gr-a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+        }
+    }
+
+    &__wrapper {
+        transition-timing-function: Linear;
+    }
+}
